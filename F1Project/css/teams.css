@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    position: fixed;
+    height: 56px;
+    width: 100vw;
+    background-color: transparent;
+}
+
+#side-menu {
+    position: fixed;
+    left: -90vw;
+    width: 30vw;
+    height: 100vh;
+    background-color: #F21905;
+    align-items: center;
+}
+
+#side-menu a {
+    margin-top: 1em;
+    margin-left: 2em;
+    color: #1A1B26;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.side-menu-content {
+    width: 20%;
+    height: 30px;
+}
+
+.side-menu-space {
+    width: 20%;
+    height: 15px;
+}
+
+#button-side-menu-open {
+    margin-top: 1em;
+    margin-left: 1em;
+    color: #F21905;
+}
+
+#button-side-menu-close {
+    margin-top: 1em;
+    margin-left: 1em;
+    color: #1A1B26;
+}
+
+.side-menu-open {
+    transition: transform 1s;
+    transform: translateX(90vw)
+}
+
+.side-menu-close {
+    transition: 1s;
+    transform: translateX(0vw);
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1A1B26;
+}
+
+#image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 200vh;
+    background-color: #1A1B26;
+}
+
+
+.teams-image {
+    position: relative;
+    width: 50%;
+    max-width: 250px;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .teams-image:hover .overlay {
+    opacity: 1;
+  }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .image-container {
+        width: 40vw;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .image-container {
+        width: 30vw;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .image-container {
+        width: 22vw;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .image-container {
+        width: 20vw;
+    }
+}
